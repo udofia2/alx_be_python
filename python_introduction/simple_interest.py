@@ -1,7 +1,7 @@
-principal = 1000
-rate = 0.05
+principals = 1000
+rates = 0.05
 time = 3
 
-interests = int(principal) * float(rate) * int(time)
+interests = int(principals) * float(rates) * int(time)
 
-print(f'The simple interest for principal = {principal}, rate = {rate}, time = {time} is:', interests )
+print(f'The simple interest for principal = {principals}, rate = {rates}, time = {time} is:', interests )
