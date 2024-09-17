@@ -1,4 +1,4 @@
-currentAge = int(input('Enter your current Age:'))
+currentAge = int(input('How old are you:'))
 
 determiner = 2050 - 2023
 futureAge = currentAge + determiner
