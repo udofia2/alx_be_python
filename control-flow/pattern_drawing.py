@@ -1,7 +1,12 @@
-size =  int(input("Enter the size of the pattern:"))
+size = int(input("Enter the size of the pattern: "))
 
-i = 0
-while(i < size):
-  # for x in range(size):
-  print("*" * size, "\n")
-  i += 1
+while size <= 0:
+    print("Please enter a positive integer.")
+    size = int(input("Enter the size of the pattern: "))
+
+row = 0
+while row < size:
+    for _ in range(size):
+        print("*", end="")
+    print()
+    row += 1
