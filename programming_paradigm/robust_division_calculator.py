@@ -20,6 +20,8 @@ def safe_divide(numerator, denominator):
     # Perform division with zero division error handling
     try:
         result = numerator / denominator
-        return f"The result of the division is {result:.2f}"
+        # Remove trailing zeros
+        result_str = f"{result:g}"
+        return f"The result of the division is {result_str}"
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
